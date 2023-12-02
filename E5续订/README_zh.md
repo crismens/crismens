@@ -9,7 +9,7 @@
 ### Cloudflare Workers
 1. 创建一个新的 [Workers KV 命名空间](https://dash.cloudflare.com/?to=/:account/workers/kv/namespaces)。
 2. 创建一个新的 [Cloudflare Workers 服务](https://dash.cloudflare.com/?to=/:account/workers) 并点击 "快速编辑" 按钮。
-3. 将 [index.js](src/E5续订/index.js) 文件的内容复制到代码字段中并点击 "保存并部署"。
+3. 将 [index.js](E5续订/index.js) 文件的内容复制到代码字段中并点击 "保存并部署"。
 4. 返回 "设置" 选项卡，在 "环境变量" 中，添加以下环境变量：
     * `CRON_PATH`：手动触发定时任务的路径，例如 `/cron`。如果不需要手动触发定时任务，可以不设置。
     * `TGBOT_TOKEN`：用于发送通知的 Telegram 机器人 Token。可以通过 [BotFather](https://t.me/BotFather) 创建。如果不需要接收通知，可以不设置。
